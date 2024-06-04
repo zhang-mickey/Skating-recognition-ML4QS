@@ -10,6 +10,13 @@ https://www.ericwolter.com/projects/apple-health-export/
 ## Sensors
 **Heart rate**
 
+**accelerometer**
+
+**gyroscope**
+
+**megnetometer**
+
+**Location GPS**
 
 ## Frequency & time period  
 
