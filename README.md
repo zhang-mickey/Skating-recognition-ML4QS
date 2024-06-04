@@ -1,10 +1,20 @@
-# Apple Health 导出为 CSV 格式数据
+# 
+Apple Health 导出为 CSV 格式数据
+
 Apple Health XML to CSV Converter
 
 https://www.ericwolter.com/projects/apple-health-export/
 
-## Multiclass
 
+
+## Sensors
+**Heart rate**
+
+
+## Frequency & time period  
+
+## Multiclass
+Target: predict the activity
 **Outdoor walk**
 
 **Indoor walk**
