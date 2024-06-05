@@ -14,6 +14,8 @@ https://www.ericwolter.com/projects/apple-health-export/
 
 **accelerometer**
 
+![image](https://github.com/zhang-mickey/ML4QS/assets/145342600/8537a095-fa96-46c6-ba79-a7b9eefd7afa)
+
 **gyroscope**
 
 **megnetometer**
