@@ -8,6 +8,8 @@ https://www.ericwolter.com/projects/apple-health-export/
 
 
 ## Sensors
+![image](https://github.com/zhang-mickey/ML4QS/assets/145342600/495df10a-2cac-45f4-ae9a-e60077f35431)
+
 **Heart rate**
 
 **accelerometer**
