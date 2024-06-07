@@ -8,7 +8,8 @@ Apple Health XML to CSV Converter
 https://www.ericwolter.com/projects/apple-health-export/
 
 
-
+# 分帧
+假设每帧只有一个活动，为每个帧打标签  
 ## Sensors
 ![image](https://github.com/zhang-mickey/ML4QS/assets/145342600/495df10a-2cac-45f4-ae9a-e60077f35431)
 
