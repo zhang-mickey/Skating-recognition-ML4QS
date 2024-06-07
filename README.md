@@ -1,4 +1,6 @@
-# Kalman filter
+# fall detection
+
+## Kalman filter
 状态估计算法
 # 
 Apple Health 导出为 CSV 格式数据
@@ -29,18 +31,14 @@ https://www.ericwolter.com/projects/apple-health-export/
 
 ## Multiclass
 Target: predict the activity
-**Outdoor walk**
 
-**Indoor walk**
+**power strokes**
 
-**Outdoor running**
+**breaking**
 
-**Indoor running**
+**turns**
 
-**Skating**
+**jumps**
 
-**Still**
-
-**Stair Stepper**
-
+**curves**
 
