@@ -42,3 +42,11 @@ Target: predict the activity
 
 **curves**
 
+# TCN
+Embedding的主要目的是将时序数据映射到一个稠密的连续向量空间中，使得相似的语义信息在该向量空间中也能够彼此接近
+## 感受域
+
+### causal convolution
+
+### dilated convolution
+### 空洞卷积
