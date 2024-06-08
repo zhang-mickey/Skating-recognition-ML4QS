@@ -1,16 +1,19 @@
 # fall detection
 Falls and nonfalls can be regarded as changes in motion in terms of range, angle and speed.
-## Kalman filter
-状态估计算法
-# 
-Apple Health 导出为 CSV 格式数据
-
-Apple Health XML to CSV Converter
-
-https://www.ericwolter.com/projects/apple-health-export/
-
-
 # Data preprocessing
+## 时序数据
+### 时间戳的转换
+### 数据重采样（修改时间频率）
+取平均值
+### 异常值处理、数据平滑处理
+#### Kalman filter
+状态估计算法
+#### lowpass filter
+
+
+
+
+
 The data obtained
 by the inertial sensor are divided into smaller data segments of
 a predetermined size, namely, the data window. Obviously, it is
@@ -19,8 +22,13 @@ avoid data sample loss.
 
 Therefore, we resort to annotating in terms of event-specific
 time intervals to suit the training process. Although there is
-nonuniformity in the data, we balance the collected data generated from each source, avoiding inaccurate behavior for identifying falls. 
-## Sensors
+nonuniformity in the data, we balance the collected data generated from each source, avoiding inaccurate behavior for identifying falls. 、
+
+## EDA
+### 数据分布、数据相关性
+
+### 特征提取/相关性分析
+## Sensors 数据收集流程
 Obtainment of a sufficient quantity of long-term, reliable and portable recordings
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4315d2f6-0a97-44c8-8aa2-d4f2a228b4bc)
 ### Placement of sensor
@@ -73,6 +81,7 @@ ESN的训练, 只需要利用线性回归方法训练输出权值, 输入权值�
 ESN的这种训练方式能够保证权值的全局最优, 克服了基于梯度的递归神经网络计算效率低、训练方法复杂以及容易陷入局部最优等问题
 ## LSTM
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/bd8bdcf2-39b1-45fa-ad5e-8b56f3cc9e3d)
+### Forget Gate
 
 ## TCN
 Embedding的主要目的是将时序数据映射到一个稠密的连续向量空间中，使得相似的语义信息在该向量空间中也能够彼此接近
@@ -87,3 +96,12 @@ Embedding的主要目的是将时序数据映射到一个稠密的连续向量�
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/538dc45a-f540-47c7-b9f6-fcd721e0468d)
 
 ### 空洞卷积
+
+
+
+#### apple watch导出数据
+Apple Health 导出为 CSV 格式数据
+
+Apple Health XML to CSV Converter
+
+https://www.ericwolter.com/projects/apple-health-export/
