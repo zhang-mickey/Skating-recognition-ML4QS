@@ -22,7 +22,8 @@ time intervals to suit the training process. Although there is
 nonuniformity in the data, we balance the collected data generated from each source, avoiding inaccurate behavior for identifying falls. 
 ## Sensors
 Obtainment of a sufficient quantity of long-term, reliable and portable recordings
-![image](https://github.com/zhang-mickey/ML4QS/assets/145342600/495df10a-2cac-45f4-ae9a-e60077f35431)
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4315d2f6-0a97-44c8-8aa2-d4f2a228b4bc)
+
 
 **Heart rate**
 
