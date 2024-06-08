@@ -23,6 +23,8 @@ nonuniformity in the data, we balance the collected data generated from each sou
 ## Sensors
 Obtainment of a sufficient quantity of long-term, reliable and portable recordings
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4315d2f6-0a97-44c8-8aa2-d4f2a228b4bc)
+### Placement of sensor
+![sensor_schematic](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/48eb9da2-876f-4f89-8c7a-5cd7ba1acd21)
 
 
 **Heart rate**
