@@ -43,6 +43,7 @@ Target: predict the activity
 **curves**
 # Time series
 ## RNN
+RNN 在内部设计上存在一个严重的问题：由于网络一次只能处理一个时间步长，后一步必须等前一步处理完才能进行运算
 ### Backpropagation
 如果在输出层得不到期望的输出值，则取输出与期望的误差的平方和作为目标函数，转入反向传播，逐层求出目标函数对各神经元权值的偏导数，构成目标函数对权值向量的梯量，作为修改权值的依据.
 
@@ -62,7 +63,9 @@ ESN的这种训练方式能够保证权值的全局最优, 克服了基于梯度
 
 ## TCN
 Embedding的主要目的是将时序数据映射到一个稠密的连续向量空间中，使得相似的语义信息在该向量空间中也能够彼此接近
-## 感受域
+## 感受野
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4d5dabb6-3b39-4cfb-8bae-6797f7f942d0)
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4d5dabb6-3b39-4cfb-8bae-6797f7f942d0)
 
 ### causal convolution
 
