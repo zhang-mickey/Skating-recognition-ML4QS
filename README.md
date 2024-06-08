@@ -1,5 +1,5 @@
 # fall detection
-
+Falls and nonfalls can be regarded as changes in motion in terms of range, angle and speed.
 ## Kalman filter
 状态估计算法
 # 
@@ -10,9 +10,18 @@ Apple Health XML to CSV Converter
 https://www.ericwolter.com/projects/apple-health-export/
 
 
-# 分帧
-假设每帧只有一个活动，为每个帧打标签  
+# Data preprocessing
+The data obtained
+by the inertial sensor are divided into smaller data segments of
+a predetermined size, namely, the data window. Obviously, it is
+realistic to use sliding windows with a specific overlap rate to
+avoid data sample loss.
+
+Therefore, we resort to annotating in terms of event-specific
+time intervals to suit the training process. Although there is
+nonuniformity in the data, we balance the collected data generated from each source, avoiding inaccurate behavior for identifying falls. 
 ## Sensors
+Obtainment of a sufficient quantity of long-term, reliable and portable recordings
 ![image](https://github.com/zhang-mickey/ML4QS/assets/145342600/495df10a-2cac-45f4-ae9a-e60077f35431)
 
 **Heart rate**
@@ -63,10 +72,14 @@ ESN的这种训练方式能够保证权值的全局最优, 克服了基于梯度
 
 ## TCN
 Embedding的主要目的是将时序数据映射到一个稠密的连续向量空间中，使得相似的语义信息在该向量空间中也能够彼此接近
+
+
 ## 感受野
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/6db030e7-6357-4ac0-81d5-43f49586bcc4)
 
 ### causal convolution
 
 ### dilated convolution
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/538dc45a-f540-47c7-b9f6-fcd721e0468d)
+
 ### 空洞卷积
