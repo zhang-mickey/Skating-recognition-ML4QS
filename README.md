@@ -47,8 +47,17 @@ Target: predict the activity
 如果在输出层得不到期望的输出值，则取输出与期望的误差的平方和作为目标函数，转入反向传播，逐层求出目标函数对各神经元权值的偏导数，构成目标函数对权值向量的梯量，作为修改权值的依据.
 
 用链式法则对每层迭代计算梯度
+high computational overhead, and the probability of getting stuck in a local minimum.
 
 反向传播算法缺乏仿生学方面的理论依据，显然生物神经网络中并不存在反向传播这样的数学算法
+### echo state network
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/2c3fad59-5949-4b2b-9454-74b8f383a410)
+
+关键部分是随机生成的稀疏储备池（Reservoir Computing）。
+
+ESN的训练, 只需要利用线性回归方法训练输出权值, 输入权值和储备池权值根据特定的要求随机生成
+
+ESN的这种训练方式能够保证权值的全局最优, 克服了基于梯度的递归神经网络计算效率低、训练方法复杂以及容易陷入局部最优等问题
 ## LSTM
 
 ## TCN
