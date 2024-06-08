@@ -72,6 +72,7 @@ ESN的训练, 只需要利用线性回归方法训练输出权值, 输入权值�
 
 ESN的这种训练方式能够保证权值的全局最优, 克服了基于梯度的递归神经网络计算效率低、训练方法复杂以及容易陷入局部最优等问题
 ## LSTM
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/bd8bdcf2-39b1-45fa-ad5e-8b56f3cc9e3d)
 
 ## TCN
 Embedding的主要目的是将时序数据映射到一个稠密的连续向量空间中，使得相似的语义信息在该向量空间中也能够彼此接近
