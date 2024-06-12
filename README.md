@@ -75,6 +75,11 @@ Regularization Hyperparameters
 ### L1 norm
 
 ### L2 norm
+
+## bagging(reduce variance)
+
+## boosting(reduce bias)
+
 # Time series
 ## RNN
 RNN 在内部设计上存在一个严重的问题：由于网络一次只能处理一个时间步长，后一步必须等前一步处理完才能进行运算
