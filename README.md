@@ -28,12 +28,17 @@ nonuniformity in the data, we balance the collected data generated from each sou
 ### 数据分布、数据相关性
 
 ### 特征提取/相关性分析
+
+#### Pearson coefficient 
+simple but could ignore more complex dependencies,e.g. multiple features,that only together exhibit some predicitve power 
 ## Sensors 数据收集流程
 Obtainment of a sufficient quantity of long-term, reliable and portable recordings
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4315d2f6-0a97-44c8-8aa2-d4f2a228b4bc)
 ### Placement of sensor
 ![sensor_schematic](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/48eb9da2-876f-4f89-8c7a-5cd7ba1acd21)
 
+
+### forward selection 
 
 **Heart rate**
 
@@ -66,6 +71,10 @@ Target: predict the activity
 Regularization Hyperparameters
 
 为避免过拟合，需要在训练时限制决策树的自由度，这被称作正则化。正则化超参数跟算法有关，但一般情况下至少可以限制决策树的最大深度
+
+### L1 norm
+
+### L2 norm
 # Time series
 ## RNN
 RNN 在内部设计上存在一个严重的问题：由于网络一次只能处理一个时间步长，后一步必须等前一步处理完才能进行运算
