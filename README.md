@@ -67,6 +67,12 @@ Target: predict the activity
 
 **curves**
 
+## PAC 概率近似正确
+Basically we call a hypothesis se PAC learnable, if given enough training exapmles we can approximate the out- of -sample error arbitrarily well by the in-sample error
+## SVM
+find a hyperplane that maximizes the distance between two classes 
+## Naive Bayes
+under the assumption that the attributes are conditionally independent.  
 ## decision tree
 Regularization Hyperparameters
 
