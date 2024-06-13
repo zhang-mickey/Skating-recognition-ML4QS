@@ -53,8 +53,6 @@ Obtainment of a sufficient quantity of long-term, reliable and portable recordin
 
 **accelerometer**
 
-![image](https://github.com/zhang-mickey/ML4QS/assets/145342600/8537a095-fa96-46c6-ba79-a7b9eefd7afa)
-
 **gyroscope**
 
 **megnetometer**
@@ -132,9 +130,19 @@ Embedding的主要目的是将时序数据映射到一个稠密的连续向量�
 ### 空洞卷积
 
 ## Reinforcement Learning
+### MDP
+### discount factor
+0: only care about the immediate reward
 
-### Q-learning
+1:future rewards are equally important as the current reward 
+
+### SARSA on policy
+using the same policy 
+### Q-learning off policy
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/7f129f68-0411-43f0-89ba-d69ef3297c09)
+
+#### eligibility traces资格迹 
+
 
 #### apple watch导出数据
 Apple Health 导出为 CSV 格式数据
