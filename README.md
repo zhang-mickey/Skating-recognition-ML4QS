@@ -10,6 +10,8 @@ Falls and nonfalls can be regarded as changes in motion in terms of range, angle
 状态估计算法
 #### lowpass filter
 
+#### Mixture model
+
 
 
 
@@ -31,6 +33,13 @@ nonuniformity in the data, we balance the collected data generated from each sou
 
 #### Pearson coefficient 
 simple but could ignore more complex dependencies,e.g. multiple features,that only together exhibit some predicitve power 
+#### PCA
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/a7c5d54b-8ddc-430a-aac5-b2ab833cf7ae)
+
+### Frequency Domain
+
+#### Fourier Transformations
+
 ## Sensors 数据收集流程
 Obtainment of a sufficient quantity of long-term, reliable and portable recordings
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4315d2f6-0a97-44c8-8aa2-d4f2a228b4bc)
