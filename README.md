@@ -15,6 +15,10 @@ Falls and nonfalls can be regarded as changes in motion in terms of range, angle
 
 
 
+#### Fourier transformation
+
+Tries to decompose a temporal sequence of measurements with some form of periodicity into a set of sinusoid functions of different frequencies.  
+
 
 The data obtained
 by the inertial sensor are divided into smaller data segments of
@@ -130,6 +134,7 @@ Embedding的主要目的是将时序数据映射到一个稠密的连续向量�
 ### 空洞卷积
 
 ## Reinforcement Learning
+
 ### MDP
 ### discount factor
 0: only care about the immediate reward
@@ -138,7 +143,11 @@ Embedding的主要目的是将时序数据映射到一个稠密的连续向量�
 
 ### SARSA on policy
 using the same policy 
+
+The estimates of the value of an action or state are updated by considering the same action selection mechanism in the next state
 ### Q-learning off policy
+the action with the highest Q-value is always selected in the next state 
+
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/7f129f68-0411-43f0-89ba-d69ef3297c09)
 
 #### eligibility traces资格迹 
