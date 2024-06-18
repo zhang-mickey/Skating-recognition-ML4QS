@@ -53,6 +53,14 @@ Obtainment of a sufficient quantity of long-term, reliable and portable recordin
 
 ### forward selection 
 
+
+### Temporal distancce metrics
+#### cross-correlation coefficient
+allows for time series that are shifted
+
+#### DTW
+take into account that there is a difference in speed between different time series
+
 **Heart rate**
 
 **accelerometer**
