@@ -1,5 +1,22 @@
 # fall detection
 Falls and nonfalls can be regarded as changes in motion in terms of range, angle and speed.
+
+Fall detection  is very important for all kinds of activities.
+
+With the help of sensors, we want to predict whether the people fall or not when do staking.
+
+heart rate give us better insight on the nature of falling behavior, although it  may cause many missing values
+
+we use two phones and put one on the waist and another on the 
+
+We believe this combination can capture the pattern nicely.
+
+One of the problem is how to collect and capture the fall data properly 
+
+Since I am a rookie, due to the lack of experience in this sports, I fall consistently,  so that we were able to collect the data   in a situation close
+to real life when falls appear unintentionally
+
+
 # Data preprocessing
 ## 时序数据
 ### 时间戳的转换
