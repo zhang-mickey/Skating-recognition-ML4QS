@@ -1,20 +1,20 @@
 # fall detection
-Falls and nonfalls can be regarded as changes in motion in terms of range, angle and speed.
 
-Fall detection  is very important for all kinds of activities.
+Detecting falls accurately is vital for preventing injuries and providing timely assistance. Falls and non-falls can be characterized by changes in motion, specifically in terms of range, angle, and speed. A typical fall involves a sudden movement towards the ground, culminating in a vertical shock.
 
-With the help of sensors, we want to predict whether the people fall or not when do staking.
 
-heart rate give us better insight on the nature of falling behavior, although it  may cause many missing values
+To capture these  patterns, we employ a dual-device setup using smartphones. One phone is placed on the central part of the waist, aligning with the body’s center of gravity, while the other is attached to the dominant foot to record all data associated with foot movements. This combination allows us to comprehensively capture the dynamics of a fall.
 
-we use two phones and put one on the waist and another on the 
+We leverages five types of sensors to capture the essence of these motions accurately. Additionally, we incorporate physiological data, specifically heart rate, to gain better insight into the nature of falling behavior, despite the potential for missing values.
 
-We believe this combination can capture the pattern nicely.
-
-One of the problem is how to collect and capture the fall data properly 
+One of the primary challenges we face is collecting and capturing fall data accurately.
 
 Since I am a rookie, due to the lack of experience in this sports, I fall consistently,  so that we were able to collect the data   in a situation close
-to real life when falls appear unintentionally
+to  real-life fall scenarios (when falls appear unintentionally)
+
+Falls can occur in various directions, but they often exhibit similar patterns. To streamline our data collection and analysis process, we have chosen to focus on falls in one direction only. 
+
+
 
 
 # Data preprocessing
