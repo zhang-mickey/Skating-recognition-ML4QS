@@ -6,11 +6,16 @@ Falls and nonfalls can be regarded as changes in motion in terms of range, angle
 ### 数据重采样（修改时间频率）
 取平均值
 ### 异常值处理、数据平滑处理
+
+### Chauvenets Criterion
+assume the data to follow the normal distribution
+#### Mixture model
+
+Assuming we have K distributions to describe our data  
+
 #### Kalman filter
 状态估计算法
 #### lowpass filter
-
-#### Mixture model
 
 
 
@@ -62,7 +67,7 @@ allows for time series that are shifted
 take into account that there is a difference in speed between different time series
 
 **Heart rate**
-
+捕捉 重心变化 
 **accelerometer**
 
 **gyroscope**
@@ -187,6 +192,9 @@ the action with the highest Q-value is always selected in the next state
 
 #### eligibility traces资格迹 
 
+
+### U-tree to handle a continuous state space
+dynamically discretizes the state space by means of a state tree
 
 #### apple watch导出数据
 Apple Health 导出为 CSV 格式数据
