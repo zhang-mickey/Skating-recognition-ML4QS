@@ -2,17 +2,20 @@
 
 Detecting falls accurately is vital for preventing injuries and providing timely assistance. Falls and non-falls can be characterized by changes in motion, specifically in terms of range, angle, and speed. A typical fall involves a sudden movement towards the ground, culminating in a vertical shock.
 
+One of the primary challenges we face is collecting and capturing fall data accurately.
 
-To capture these  patterns, we employ a dual-device setup using smartphones. One phone is placed on the central part of the waist, aligning with the body’s center of gravity, while the other is attached to the dominant foot to record all data associated with foot movements. This combination allows us to comprehensively capture the dynamics of a fall.
+To capture these  patterns, we use three devices. One phone is placed on the central part of the waist, aligning with the body’s center of gravity, while the other is attached to the dominant foot to record all data associated with foot movements. This combination allows us to comprehensively capture the dynamics of a fall.
 
 We leverages five types of sensors to capture the essence of these motions accurately. Additionally, we incorporate physiological data, specifically heart rate, to gain better insight into the nature of falling behavior, although it may introduce  missing values.
 
-One of the primary challenges we face is collecting and capturing fall data accurately.
+
 
 Since I am a rookie, due to the lack of experience in this sports, I fall consistently,  so that we were able to collect the data   in a situation close
 to  real-life fall scenarios (when falls appear unintentionally)
 
 Falls can occur in various directions, but they often exhibit similar patterns. To streamline our data collection and analysis process, we have chosen to focus on falls in one direction only. 
+
+How  we define the window size? Our sample rate is 70HZ, Based on relevant research and experimental validation, we choose the sliding window 50
 
 
 
