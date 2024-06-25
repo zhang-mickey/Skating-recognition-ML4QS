@@ -113,6 +113,11 @@ Target: predict the activity
 
 ## PAC 概率近似正确
 Basically we call a hypothesis se PAC learnable, if given enough training exapmles we can approximate the out- of -sample error arbitrarily well by the in-sample error
+
+## VC dimension
+For a perceptron, which creates a hyperplane using a linear combination of feature values, the VC dimension is directly related to the number of features, d, used to describe the input space. Specifically, the VC dimension of a perceptron is d + 1.
+In d-dimensional space, a perceptron can shatter d + 1 points. This is because a set of d + 1 points can be positioned in such a way that every possible binary labeling of these points can be separated by some hyperplane.
+
 ## SVM
 find a hyperplane that maximizes the distance between two classes 
 ## Naive Bayes
