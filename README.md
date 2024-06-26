@@ -234,6 +234,12 @@ the action with the highest Q-value is always selected in the next state
 ### U-tree to handle a continuous state space
 dynamically discretizes the state space by means of a state tree
 
+We build the tree by starting with a single node (i.e. a leaf): all continuous states are mapped to one discrete state. 
+
+For each leaf, we investigate whether a split could be beneficial. Hereto, we iterate over all attributes Xi and sort the data according to the values of that attribute. We consider a split at each point in the ordered list of values and test for a significant difference between the Q-values in the two resulting sets using a Kolmogorov Smirnov test. We store both the p-value and the split criterion of the split with the lowest p-value
+
+
+
 #### apple watch导出数据
 Apple Health 导出为 CSV 格式数据
 
