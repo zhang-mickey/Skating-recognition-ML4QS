@@ -48,21 +48,46 @@ Obtainment of a sufficient quantity of long-term, reliable and portable recordin
 
 
 # Data preprocessing
+
+## window size
+the window size is set to lambda which means that we consider the current plus the last three time points  
+
+
 ## 时序数据
 ### 时间戳的转换
 ### 数据重采样（修改时间频率）
 取平均值
 ### 异常值处理、数据平滑处理
 
+## Difference between distance based and distribution based outlier detection
+distribution based outlier detection: a certain distribution of the data is assumed and outliers aredefined based on their position on this distribution 
+
+distance based: a distance metric is assumed
+
+
 ### Chauvenets Criterion
 assume the data to follow the normal distribution
+
+do not look at the temporal dimension 
+
+
 #### Mixture model
 
 Assuming we have K distributions to describe our data  
 
 #### Kalman filter
-状态估计算法
-#### lowpass filter
+identifies outliers and also replaces these with new values  
+
+递归的状态估计算法
+
+Ft expresses how the previous state influences the new state 
+
+Pt containing the level of noise or error we expect to see 
+
+#### lowpass filter(individual attributes)
+filter out periodic constituents based upon their frequency  
+
+The higher the order n, the more steeply the magnitude of the frequencies above the cutoff frequency fc drop
 
 
 ### topic  model
@@ -94,11 +119,16 @@ nonuniformity in the data, we balance the collected data generated from each sou
 #### Pearson coefficient 
 simple but could ignore more complex dependencies,e.g. multiple features,that only together exhibit some predicitve power 
 #### PCA
+The normalized eigenvector with the highest eigenvalue is the line that explains mosts variance in the data 
+
+
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/a7c5d54b-8ddc-430a-aac5-b2ab833cf7ae)
 
 ### Frequency Domain
 
-#### Fourier Transformations
+#### Fourier Transformation
+assign the high amplitudes to frequenncies that ocur most prominent in the data 
+
 
 #### amplitude
 take the **frequency with highest amplitude**, this gives us an indication of the most important frequency in the windows under consideration
@@ -123,23 +153,36 @@ allows for time series that are shifted
 #### DTW
 take into account that there is a difference in speed between different time series
 
+monotonicity
+
+boundary  
+
 ### k-medoids
 Instead of assigning cluster centers that are averages over the points belonging to the cluster, the k-medoids algorithm selects points from the dataset as cluster centers. 
 This solves our previous problem we have identified with the person level data and also works well with dynamic time warping. 
 
 ### subspace clustering 
-we split the range of each variable up into ε distinct intervals  
+Try to find interesting clusters in subsets of features based on defined ε distinct intervals per feature and only splitting up further based on more features when there are intervals that are sufficiently dense.
+
 
 we define a cluster as a maximal set of connected dense units.
 
 common face (i.e. when they share a border of a range on one dimension and have the same ranges on the others)
 
 ### silhouette score
+evaluate the quality of clustering. Compute the average distance of data points to points within its own cluster and computes the average distance to points in the closest other cluster.  
 
 a:the average distance of a point to the other points in its cluster
 
 b:the average distance to the points in the cluster closest 
 ## PAC 概率近似正确
+
+PAC learnaility provides guarantees on the difference between the error on the training set and the test set. Only in case the difference is reasonably small will our algorithm be able to learn the task at hand and provide generalizable outcomes.PAC combined with the VC dimension says something about the amount of data needed give a certain complexity of the hypothesis space. 
+
+When the amount of data is very limited while the network is highly complex,hence, most likely there will be a large difference between the error on the training the testset.
+
+
+
 Basically we call a hypothesis se PAC learnable, if given enough training exapmles we can approximate the out- of -sample error arbitrarily well by the in-sample error
 
 ## VC dimension
@@ -205,9 +248,13 @@ high computational overhead, and the probability of getting stuck in a local min
 
 反向传播算法缺乏仿生学方面的理论依据，显然生物神经网络中并不存在反向传播这样的数学算法
 ### echo state network
+only the weights to the output are learned 
+
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/2c3fad59-5949-4b2b-9454-74b8f383a410)
 
 关键部分是随机生成的稀疏储备池（Reservoir Computing）。
+
+The size n reflects the number of training examples N (should not exceed N/10 to N/2).
 
 ESN的训练, 只需要利用线性回归方法训练输出权值, 输入权值和储备池权值根据特定的要求随机生成
 
@@ -246,6 +293,7 @@ The estimates of the value of an action or state are updated by considering the 
 the action with the highest Q-value is always selected in the next state 
 
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/7f129f68-0411-43f0-89ba-d69ef3297c09)
+assumes a complete table is made for state action pairs. In case of a continuous state space the number of states is infinite, and hence Q-learning is no longer feasible  
 
 #### eligibility traces资格迹 
 
