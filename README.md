@@ -17,7 +17,23 @@ Falls can occur in various directions, but they often exhibit similar patterns. 
 
 How  we define the window size? Our sample rate is 70HZ, Based on relevant research and experimental validation, we choose the sliding window 50
 
+## Multiclass
+Target: predict the activity
 
+**power strokes**
+
+**breaking**
+
+**turns**
+
+**jumps**
+
+**curves**
+## Sensors 数据收集流程
+Obtainment of a sufficient quantity of long-term, reliable and portable recordings
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4315d2f6-0a97-44c8-8aa2-d4f2a228b4bc)
+### Placement of sensor
+![sensor_schematic](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/48eb9da2-876f-4f89-8c7a-5cd7ba1acd21)
 
 
 # Data preprocessing
@@ -38,8 +54,12 @@ Assuming we have K distributions to describe our data
 #### lowpass filter
 
 
+### topic  model
+无监督
 
-
+ topic modeling generally generates fewer features compared to a bag of words approach with 1-grams, as it condenses the information into a smaller number of high-level topics rather than individual words.****
+#### LDA 隐含狄利克雷分布
+它将每个文档视为多个主题的混合，而每个主题又是多个词的混合
 #### Fourier transformation
 
 Tries to decompose a temporal sequence of measurements with some form of periodicity into a set of sinusoid functions of different frequencies.  
@@ -69,11 +89,15 @@ simple but could ignore more complex dependencies,e.g. multiple features,that on
 
 #### Fourier Transformations
 
-## Sensors 数据收集流程
-Obtainment of a sufficient quantity of long-term, reliable and portable recordings
-![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4315d2f6-0a97-44c8-8aa2-d4f2a228b4bc)
-### Placement of sensor
-![sensor_schematic](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/48eb9da2-876f-4f89-8c7a-5cd7ba1acd21)
+#### amplitude
+take the **frequency with highest amplitude**, this gives us an indication of the most important frequency in the windows under consideration
+
+Frequency weighted signal average 
+
+power spectral entropy: determines whether there are one or a few discrete frequency standing out of all others
+
+
+
 
 
 ### forward selection 
@@ -98,18 +122,7 @@ take into account that there is a difference in speed between different time ser
 
 ## Frequency & time period  
 
-## Multiclass
-Target: predict the activity
 
-**power strokes**
-
-**breaking**
-
-**turns**
-
-**jumps**
-
-**curves**
 
 ## PAC 概率近似正确
 Basically we call a hypothesis se PAC learnable, if given enough training exapmles we can approximate the out- of -sample error arbitrarily well by the in-sample error
