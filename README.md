@@ -296,6 +296,7 @@ the action with the highest Q-value is always selected in the next state
 assumes a complete table is made for state action pairs. In case of a continuous state space the number of states is infinite, and hence Q-learning is no longer feasible  
 
 #### eligibility traces资格迹 
+can be used to put credit on states and actions that have been seen more often in the past. Using these concepts, the estimated values of state-actions pairs are updated more rigorously when these are seen more often in the past 
 
 
 ### U-tree to handle a continuous state space
