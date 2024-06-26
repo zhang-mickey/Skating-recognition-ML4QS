@@ -29,6 +29,17 @@ Target: predict the activity
 **jumps**
 
 **curves**
+
+**Heart rate**
+捕捉 重心变化 
+**accelerometer**
+
+**gyroscope**
+
+**megnetometer**
+
+**Location GPS**
+
 ## Sensors 数据收集流程
 Obtainment of a sufficient quantity of long-term, reliable and portable recordings
 ![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/4315d2f6-0a97-44c8-8aa2-d4f2a228b4bc)
@@ -102,6 +113,8 @@ power spectral entropy: determines whether there are one or a few discrete frequ
 
 ### forward selection 
 
+## Person Level Distance Metrics
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/bd7f40db-bde9-431d-8466-8093af039ac8)
 
 ### Temporal distancce metrics
 #### cross-correlation coefficient
@@ -110,20 +123,22 @@ allows for time series that are shifted
 #### DTW
 take into account that there is a difference in speed between different time series
 
-**Heart rate**
-捕捉 重心变化 
-**accelerometer**
+### k-medoids
+Instead of assigning cluster centers that are averages over the points belonging to the cluster, the k-medoids algorithm selects points from the dataset as cluster centers. 
+This solves our previous problem we have identified with the person level data and also works well with dynamic time warping. 
 
-**gyroscope**
+### subspace clustering 
+we split the range of each variable up into ε distinct intervals  
 
-**megnetometer**
+we define a cluster as a maximal set of connected dense units.
 
-**Location GPS**
+common face (i.e. when they share a border of a range on one dimension and have the same ranges on the others)
 
-## Frequency & time period  
+### silhouette score
 
+a:the average distance of a point to the other points in its cluster
 
-
+b:the average distance to the points in the cluster closest 
 ## PAC 概率近似正确
 Basically we call a hypothesis se PAC learnable, if given enough training exapmles we can approximate the out- of -sample error arbitrarily well by the in-sample error
 
@@ -131,6 +146,10 @@ Basically we call a hypothesis se PAC learnable, if given enough training exapml
 For a perceptron, which creates a hyperplane using a linear combination of feature values, the VC dimension is directly related to the number of features, d, used to describe the input space. Specifically, the VC dimension of a perceptron is d + 1.
 In d-dimensional space, a perceptron can shatter d + 1 points. This is because a set of d + 1 points can be positioned in such a way that every possible binary labeling of these points can be separated by some hyperplane.
 
+
+A hypothesis set with an infinite VC dimension:
+
+we cannot provide guarantees on the different between te in sample and out of sample error according to the learning theory
 ## SVM
 find a hyperplane that maximizes the distance between two classes 
 ## Naive Bayes
