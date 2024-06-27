@@ -48,13 +48,11 @@ Obtainment of a sufficient quantity of long-term, reliable and portable recordin
 
 
 # Data preprocessing
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/298eafaa-cfc6-4347-90b8-6ea3fe6831c0)
 
 ## window size
 the window size is set to lambda which means that we consider the current plus the last three time points  
 
-
-## 时序数据
-### 时间戳的转换
 ### 数据重采样（修改时间频率）
 取平均值
 ### 异常值处理、数据平滑处理
@@ -70,10 +68,14 @@ assume the data to follow the normal distribution
 
 do not look at the temporal dimension 
 
+A point is considered an outlier when one of the following two cases holds:
+![image](https://github.com/zhang-mickey/Skating-recognition-ML4QS/assets/145342600/6301b2b3-769a-44c7-ae15-07d82a7a01ed)
 
 #### Mixture model
 
 Assuming we have K distributions to describe our data  
+
+we maximize the product of the probabilities of observing our attribute values; the higher the probabilities of the individual attribute values the higher the product
 
 #### Kalman filter
 identifies outliers and also replaces these with new values  
